@@ -4,6 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 
+print("****************exceution started**********************")
 driver = webdriver.Chrome()
 driver.get("http://seiyria.com/bootstrap-slider/")
 slider = driver.find_element(By.CSS_SELECTOR,"div#example-1 div.slider-handle.min-slider-handle.round")
