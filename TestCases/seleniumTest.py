@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 
 print("****************exceution started**********************")
 driver = webdriver.Chrome()
+a = 6
 url = "http://seiyria.com/bootstrap-slider/"
 driver.get(url)
 slider = driver.find_element(By.CSS_SELECTOR,"div#example-1 div.slider-handle.min-slider-handle.round")
