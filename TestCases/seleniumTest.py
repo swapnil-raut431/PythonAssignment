@@ -5,7 +5,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
-driver.get("http://seiyria.com/bootstrap-slider/")
+url = "http://seiyria.com/bootstrap-slider/"
+driver.get(url)
 slider = driver.find_element(By.CSS_SELECTOR,"div#example-1 div.slider-handle.min-slider-handle.round")
 move = ActionChains(driver)
 move.click_and_hold(slider).move_by_offset(40, 0).release().perform()
